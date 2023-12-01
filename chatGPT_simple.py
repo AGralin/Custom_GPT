@@ -17,7 +17,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def get_gpt_response(prompt):
     try:
         response = openai.Completion.create(
-          engine="text-davinci-003",
+          engine="gpt-3.5-turbo-1106",
           prompt=prompt,
           max_tokens=150
         )
